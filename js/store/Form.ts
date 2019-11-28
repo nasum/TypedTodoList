@@ -14,7 +14,7 @@ const MUTATION_TYPE = {
 };
 
 const mutations: MutationTree<FormState> = {
-  [MUTATION_TYPE.UPDATE_TEXT]: (state: FormState, text: string) => {
+  [MUTATION_TYPE.UPDATE_TEXT]: (state, text: string) => {
     state.text = text;
   }
 };

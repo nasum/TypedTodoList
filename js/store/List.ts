@@ -18,7 +18,7 @@ const MUTATION_TYPE = {
 };
 
 const mutations: MutationTree<ListState> = {
-  [MUTATION_TYPE.PUSH_TODO_LIST]: (state: ListState, text: string) => {
+  [MUTATION_TYPE.PUSH_TODO_LIST]: (state, text: string) => {
     state.todoList.push({ text: text });
   }
 };
