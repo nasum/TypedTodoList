@@ -1,5 +1,5 @@
 import Vue from "vue";
-import Vuex, { Store, Action, Mutation } from "vuex";
+import Vuex from "vuex";
 import createLogger from "vuex/dist/logger";
 
 import Form, { FormState } from "./Form";
