@@ -7,15 +7,17 @@ import List, { ListState } from "./List";
 
 Vue.use(Vuex);
 
-export interface RootState {
+export interface MyRootState {
   Form: FormState;
   List: ListState;
 }
 
-export default new Vuex.Store({
+const store = new Vuex.Store<MyRootState>({
   plugins: [createLogger({})],
   modules: {
     Form,
     List
   }
 });
+
+export default store
